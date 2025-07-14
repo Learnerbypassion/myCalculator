@@ -21,14 +21,19 @@ body {
 }
 
 .nav {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 20px;
     height: 65px;
     background-color: rgb(2, 2, 24);
     color: white;
-    font-size: xx-large;
+    font-size: 4vmin;
     font-family: "Bitcount Grid Double", system-ui;
     display: flex;
     align-items: center;
     padding-left: 10px;
+    flex-wrap: wrap;
 }
 
 #screen {

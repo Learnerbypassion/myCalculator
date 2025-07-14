@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 40);
+    flex-wrap: wrap;
+}
+
+.nav {
+    height: 65px;
+    background-color: rgb(2, 2, 24);
+    color: white;
+    font-size: xx-large;
+    font-family: "Bitcount Grid Double", system-ui;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#screen {
+    height: 10vmin;
+    width: 40vmin;
+    background-color: rgba(1, 206, 252, 0.623);
+    border: 0.5vmin solid rgb(214, 148, 242);
+    box-shadow:
+        0 0 0.5vmin rgb(214, 148, 242),
+        0 0 1vmin rgb(214, 148, 242),
+        0 0 2vmin rgb(214, 148, 242);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 1vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5vmin;
+}
+
+#centerBox {
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+#ope {
+    background-color: rgb(255, 200, 0);
+    cursor: pointer;
+    border: 0.5vmin solid rgb(214, 148, 242);
+    box-shadow:
+        0 0 0.5vmin rgb(214, 148, 242),
+        0 0 1vmin rgb(214, 148, 242),
+        0 0 2vmin rgb(214, 148, 242);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5vmin;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vmin;
+}
+
+.plusmin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vmin;
+    height: 50%;
+    border: 0.3vmin solid black;
+
+}
+
+#eqal {
+    background-color: lawngreen;
+}
+
+#all-clr {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.numbers {
+    display: grid;
+    grid-template-rows: repeat(4, 12vmin);
+    grid-template-columns: repeat(4, 10vmin);
+}
+
+.numbers button {
+    margin: 0.3vmin;
+    background-color: rgba(119, 0, 255, 0.87);
+    cursor: pointer;
+    border-radius: 5vmin;
+    border: 0.5vmin solid rgb(214, 148, 242);
+    box-shadow:
+        0 0 0.5vmin rgb(214, 148, 242),
+        0 0 1vmin rgb(214, 148, 242),
+        0 0 2vmin rgb(214, 148, 242);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vmin;
+}
+
+.numbers button:hover {
+    background-color: rgba(119, 0, 255, 0.699);
+    box-shadow:
+        0 0 1vmin rgb(199, 69, 255),
+        0 0 2vmin rgb(199, 69, 255),
+        0 0 4vmin rgb(199, 69, 255);
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+#ope:hover {
+    background-color: rgba(255, 200, 0, 0.845);
+    box-shadow:
+        0 0 0.5vmin rgb(255, 255, 0),
+        0 0 1vmin rgba(255, 255, 0),
+        0 0 2vmin rgba(255, 255, 0);
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+#eqal:hover {
+    background-color: lime;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
